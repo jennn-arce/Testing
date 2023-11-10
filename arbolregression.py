@@ -13,7 +13,8 @@ num_muestras = 100
 Gasto_Publicidad_ATL = np.random.uniform(10000, 50000, num_muestras)
 num_ATL_1 = np.random.randint(5, 20, num_muestras)
 num_ATL_2 = np.random.randint(0, 3, num_muestras)
-brand_awareness = 50 + 2 * Gasto_Publicidad_ATL + 3 * num_ATL_2 + 10 * num_ATL_2 + np.random.normal(0, 5000, num_muestras) #Para el brand awareness se sugiere hacer regresiones para llegar a una medición en el paso 1
+brand_awareness = 50 + 2 * Gasto_Publicidad_ATL + 3 * num_ATL_2 + 10 * num_ATL_2 + np.random.normal(0, 5000, num_muestras) 
+#Para el brand awareness se sugiere hacer regresiones para llegar a una medición en el paso 1
 
 #  DataFrame con los datos de protitipo (ejemplo con ATL).
 datos = pd.DataFrame({
